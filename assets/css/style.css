@@ -333,11 +333,11 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
     padding-top:  50px;
 }
 .education-horizontal-timeline {
-    padding: 120px 0;
+    padding: 80px 0;
 }
 
 /*.education-horizontal-timeline*/
-.education-horizontal-timeline .col-sm-4 {padding:0 15px;}
+.education-horizontal-timeline .col-sm-4 {padding:0 2px;}
 
 .single-horizontal-timeline .experience-time h3{text-transform: capitalize;}
 .single-horizontal-timeline .experience-time h3 span{text-transform:lowercase;}
