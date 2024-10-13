@@ -343,7 +343,11 @@ nav.navbar.bootsnav .navbar-toggle i {
 .single-about-img img {
   max-width: 500px;
   height: 468px;
+  width: auto;
+  height: auto;
+  display: block;
 }
+
 .about-list-icon {
   display: flex;
   justify-content: center;
@@ -351,9 +355,9 @@ nav.navbar.bootsnav .navbar-toggle i {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 109%;
+  width: 110%;
   height: 90px;
-  background: #1f2c6c;
+  background: white;
 }
 /*.ab-list-icon */
 .about-list-icon ul {
@@ -378,6 +382,13 @@ nav.navbar.bootsnav .navbar-toggle i {
 }
 .about-list-icon ul li a i {
   margin-left: 6px;
+}
+.about-list-icon img {
+  max-width: 250px;
+  height: 468px;
+  width: auto;
+  height: auto;
+  display: block;
 }
 /*.ab-list-icon */
 
