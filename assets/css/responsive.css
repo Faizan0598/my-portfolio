@@ -73,7 +73,7 @@
   }
   nav.navbar.bootsnav .navbar-toggle {
     display: inline-block;
-    float: right;
+    /* float: right; not needed */
     margin-right: 0;
     margin-top: 21px;
   }
