@@ -153,16 +153,35 @@ $(document).ready(function () {
         alert("please fill the inputs");
       } else {
         let data = new FormData(contactForm);
-        // console.log(data);
-        let myData = { name, email, subject, message };
-        // console.log(myData);
 
         fetch("https://formspree.io/f/mnnqqprr", {
           method: "POST",
           body: data,
-        });
-        alert("Thank you. your form was submited");
-        contactForm.reset();
+          headers: {
+            Accept: "application/json",
+          },
+        })
+          .then((response) => {
+            if (response.ok) {
+              alert("Thanks for your submission! I'll contact you asap!");
+              contactForm.reset();
+            } else {
+              response.json().then((data) => {
+                let errorMsg = "";
+                if (Object.hasOwn(data, "errors")) {
+                  errorMsg = data["errors"]
+                    .map((error) => error["message"])
+                    .join(", ");
+                } else {
+                  errorMsg = "Oops! There was a problem submitting your form";
+                }
+                alert(errorMsg);
+              });
+            }
+          })
+          .catch((error) => {
+            alert("Oops! There was a problem submitting your form");
+          });
       }
     });
 });
