@@ -157,7 +157,10 @@ $(document).ready(function () {
         let myData = { name, email, subject, message };
         // console.log(myData);
 
-        fetch("_url_here", { method: "POST", body: data });
+        fetch("https://formspree.io/f/mnnqqprr", {
+          method: "POST",
+          body: data,
+        });
         alert("Thank you. your form was submited");
         contactForm.reset();
       }
