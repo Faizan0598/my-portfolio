@@ -195,7 +195,7 @@ nav.navbar.bootsnav .navbar-toggle i {
   align-items: center;
   justify-content: center;
   position: relative;
-  background: url(../images/about/welcome-banner.jpg) no-repeat;
+  background: url(../images/about/bgimage.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   height: 890px;
@@ -216,7 +216,7 @@ nav.navbar.bootsnav .navbar-toggle i {
   font-size: 54px;
   font-weight: 700;
   text-transform: uppercase;
-  line-height: 1.5;
+  line-height: 2;
 }
 .header-text h2 span {
   color: #d92cf9;
