@@ -626,6 +626,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {
   display: flex;
   align-items: center;
   flex-direction: column;
+  text-align: center;
 }
 .single-profile {
   position: relative;
